@@ -17,13 +17,10 @@ const inter = Inter({ subsets: ['latin'] })
 // }
 
 interface ProductsProps{
-  id: string
-  Name: string
-  //Price: number
-  img: string
+  pr: string
 }
 
-export default async function Home() {
+export default async function Home(props: ProductsProps) {
 
   const products = await getProducts()
 
@@ -31,8 +28,8 @@ export default async function Home() {
   
   return (
     <div className='w-screen h-screen flex flex-col items-center justify-center bg-zinc-800 gap-y-8'>
-      
-      {data.map(pr => {
+
+      {data.map((pr: any) => {
           return (
             <ul key={pr.id} className='flex flex-col items-center justify-center'>
              <Field
