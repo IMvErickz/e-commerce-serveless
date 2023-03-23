@@ -39,7 +39,8 @@ export default async function Home(props: ProductsProps) {
               />
             </ul>
           )
-        })}
+      })}
+      <Link href='/user/newUser'>vai</Link>
       
     </div>
   )
