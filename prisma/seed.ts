@@ -7,16 +7,16 @@ async function Main() {
     await prisma.category.create({
         data: {
             id: randomUUID(),
-            Name: "Cozinha",
-            Description: "Itens para cozinha"
+            Name: "Íntimo",
+            Description: "Roupas íntimas"
         }
     })
 
     await prisma.product.create({
         data: {
-            Name: "Panela",
-            img: "https://cdn.awsli.com.br/600x450/1250/1250980/produto/48170563/panela-especial-polida-20-cm-eirilar-d284a057.jpg",
-            Price: 39.9,
+            Name: "Cueca Lupo",
+            img: "https://modafacil.vteximg.com.br/arquivos/ids/399596-1000-1000/LUP436-088_2805-1-kit-2-cuecas-boxer-sem-costura-em-microfibra-Lupo.jpg?v=637769051861800000",
+            Price: 25.90,
             id: randomUUID()
         }
     })

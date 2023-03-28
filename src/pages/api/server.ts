@@ -1,7 +1,6 @@
-import { getProducts } from "@/lib/getProduct";
+import { getProducts } from "@/lib/products/getProduct";
 import { NewProduct } from "@/lib/registerProduct";
 import { randomUUID } from "crypto";
-import { prisma } from "lib/prisma";
 import { NextApiRequest, NextApiResponse } from "next";
 
 
